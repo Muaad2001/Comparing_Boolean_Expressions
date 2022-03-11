@@ -1,0 +1,138 @@
+expression1 = input("Please enter the first expression: ")
+expression2 = input("Please enter the second expression: ")
+print("\nBoolean Expression: " + expression1.upper())
+expression1 = expression1 = expression1.lower()
+expression1 = expression1.replace("and", "&")
+expression1 = expression1.replace("or", "|")
+expression1 = expression1.replace("not", "~")
+
+if "c" not in expression1:
+    print("\nTruth Table for Expression1: ")
+    print("--------------")
+    print(" | A | B | X |")
+    print("--------------")
+    express1 = []
+    for a in range(0,2):
+        for b in range(0,2):
+            x = eval(expression1)
+            print(" | " + str(a) + " | " + str(b) + " | " + str(x) + " | ")
+            express1.append(str(a))
+            express1.append(str(b))
+            express1.append(str(x))
+            print("--------------")
+elif "b" not in expression1:
+    print("\nTruth Table for Expression1: ")
+    print("--------------")
+    print(" | A | C | X |")
+    print("--------------")
+    express1 = []
+    for a in range(0,2):
+        for c in range(0,2):
+            x = eval(expression1)
+            print(" | " + str(a) + " | " + str(c) + " | " + str(x) + " | ")
+            express1.append(str(a))
+            express1.append(str(c))
+            express1.append(str(x))
+            print("--------------")
+elif "a" not in expression1:
+    print("\nTruth Table for Expression1: ")
+    print("--------------")
+    print(" | B | C | X |")
+    print("--------------")
+    express1 = []
+    for b in range(0,2):
+        for c in range(0,2):
+            x = eval(expression1)
+            print(" | " + str(b) + " | " + str(c) + " | " + str(x) + " | ")
+            express1.append(str(b))
+            express1.append(str(c))
+            express1.append(str(x))
+            print("--------------")
+else:
+    print("\nTruth Table for Expression1: ")
+    print("------------------")
+    print(" | A | B | C | X |")
+    print("------------------")
+    express1 = []
+    for a in range(0,2):
+        for b in range(0,2):
+            for c in range(0,2):
+                x = eval(expression1)
+                print(" | " + str(a) + " | " + str(b) +" | " + str(c) + " | " + str(x) + " | ")
+                express1.append(str(a))
+                express1.append(str(b))
+                express1.append(str(c))
+                express1.append(str(x))
+                print("------------------")
+
+print("\nBoolean Expression: " + expression2.upper())
+expression2 = expression2 = expression2.lower()
+expression2 = expression2.replace("and", "&")
+expression2 = expression2.replace("or", "|")
+expression2 = expression2.replace("not", "~")
+
+if "c" not in expression2:
+    print("\nTruth Table for Expression2: ")
+    print("--------------")
+    print(" | A | B | X |")
+    print("--------------")
+    express2 = []
+    for a in range(0,2):
+        for b in range(0,2):
+            x = eval(expression2)
+            print(" | " + str(a) + " | " + str(b) + " | " + str(x) + " | ")
+            express2.append(str(a))
+            express2.append(str(b))
+            express2.append(str(x))
+            print("--------------")
+elif "b" not in expression2:
+    print("\nTruth Table for Expression2: ")
+    print("--------------")
+    print(" | A | C | X |")
+    print("--------------")
+    express2 = []
+    for a in range(0,2):
+        for c in range(0,2):
+            x = eval(expression2)
+            print(" | " + str(a) + " | " + str(c) + " | " + str(x) + " | ")
+            express2.append(str(a))
+            express2.append(str(c))
+            express2.append(str(x))
+            print("--------------")
+elif "a" not in expression2:
+    print("\nTruth Table for Expression2: ")
+    print("--------------")
+    print(" | B | C | X |")
+    print("--------------")
+    express2 = []
+    for b in range(0,2):
+        for c in range(0,2):
+            x = eval(expression2)
+            print(" | " + str(b) + " | " + str(c) + " | " + str(x) + " | ")
+            express2.append(str(b))
+            express2.append(str(c))
+            express2.append(str(x))
+            print("--------------")
+else:
+    print("\nTruth Table for Expression2: ")
+    print("------------------")
+    print(" | A | B | C | X |")
+    print("------------------")
+    express2 = []
+    for a in range(0,2):
+        for b in range(0,2):
+            for c in range(0,2):
+                x = eval(expression2)
+                print(" | " + str(a) + " | " + str(b) +" | " + str(c) + " | " + str(x) + " | ")
+                express2.append(str(a))
+                express2.append(str(b))
+                express2.append(str(c))
+                express2.append(str(x))
+                print("------------------")
+print("\nResult: ", end = " ")
+if (express1==express2): 
+    print("Both expressions are equal")
+else:
+    print("Both expressions are not equal")
+
+
